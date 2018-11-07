@@ -17,10 +17,10 @@
    <widget class="QPushButton" name="exit_button">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>500</y>
+      <x>580</x>
+      <y>510</y>
       <width>111</width>
-      <height>61</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -42,20 +42,20 @@
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>274</y>
-      <width>261</width>
-      <height>41</height>
+      <x>60</x>
+      <y>270</y>
+      <width>521</width>
+      <height>51</height>
      </rect>
     </property>
    </widget>
    <widget class="QPushButton" name="enter_button">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>274</y>
+      <x>580</x>
+      <y>270</y>
       <width>111</width>
-      <height>41</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -70,8 +70,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>240</y>
+      <x>200</x>
+      <y>230</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -88,10 +88,10 @@
    <widget class="QPushButton" name="history_button">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>410</y>
+      <x>580</x>
+      <y>430</y>
       <width>111</width>
-      <height>61</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -106,20 +106,20 @@
    <widget class="QTextBrowser" name="textBrowser">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>320</y>
-      <width>261</width>
-      <height>192</height>
+      <x>60</x>
+      <y>350</y>
+      <width>521</width>
+      <height>211</height>
      </rect>
     </property>
    </widget>
    <widget class="QPushButton" name="clean_button">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>320</y>
+      <x>580</x>
+      <y>350</y>
       <width>111</width>
-      <height>61</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">

@@ -1,9 +1,10 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "saveevents.h"
+#include <chrono>
 #include <iostream>
 #include <QFile>
 #include <QTextStream>
+#include <QDateTime>
 using namespace std;
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -33,27 +34,38 @@ void MainWindow::on_enter_button_clicked()
 {
     // Get the input from lineEdit
     QString input_event = ui->lineEdit->text();
+
+    // Get current datetime
+    QString current_datetime = QDateTime::currentDateTime().toString();
+
+    // Open data.txt and append text
     QFile data("./data.txt");
     data.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Append);
-    QDataStream outs(&data);
-    outs.setVersion(QDataStream::Qt_5_11);
-    outs << input_event << '\n';
+    QTextStream outs(&data);
+    outs << input_event << " -> " << current_datetime <<  '\n';
     data.close();
+
+    // Clear lineEdit
     ui->lineEdit->clear();
 }
 
 
 void MainWindow::on_history_button_clicked()
 {
+    // Open data.txt
     QFile data("./data.txt");
     data.open(QIODevice::ReadOnly);
     QTextStream read_file(&data);
+
+    // Show text in textBrowser
     ui->textBrowser->setText(read_file.readAll());
 }
 
 
 void MainWindow::on_clean_button_clicked()
 {
+    // Remove data.txt
     QFile data("./data.txt");
     data.remove();
+    ui->textBrowser->clear();
 }

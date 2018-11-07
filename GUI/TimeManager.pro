@@ -29,8 +29,7 @@ SOURCES += \
         mainwindow.cpp
 
 HEADERS += \
-        mainwindow.h \
-    saveevents.h
+        mainwindow.h
 
 FORMS += \
         mainwindow.ui
