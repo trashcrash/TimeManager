@@ -24,6 +24,8 @@ private slots:
 
     void on_history_button_clicked();
 
+    void on_clean_button_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

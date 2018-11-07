@@ -103,6 +103,34 @@
      <string>History</string>
     </property>
    </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>320</y>
+      <width>261</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clean_button">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>320</y>
+      <width>111</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Clean Up</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
